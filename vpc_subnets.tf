@@ -9,6 +9,16 @@ resource "aws_subnet" "terraform-challenge-http-az-a" {
   })
 }
 
+resource "aws_subnet" "terraform-challenge-http-az-a" {
+  vpc_id            = aws_vpc.terraform-challenge.id
+  cidr_block        = "10.1.1.0/27"
+  availability_zone = "ap-southeast-2a"
+
+  tags = merge(local.common_tags, {
+    "Name" = "terraform-challenge AZ A"
+  })
+}
+
 resource "aws_subnet" "terraform-challenge-http-az-b" {
   vpc_id            = aws_vpc.terraform-challenge.id
   cidr_block        = "10.1.1.32/27"

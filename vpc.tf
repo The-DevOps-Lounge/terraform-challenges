@@ -4,5 +4,5 @@ resource "aws_vpc" "terraform-challenge" {
 
   tags = merge(local.common_tags, {
     "Name" = "terraform-challenge"
-  })
+  }
 }

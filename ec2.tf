@@ -4,7 +4,7 @@ resource "aws_instance" "webserver_a_01" {
   key_name      = aws_key_pair.terraform-challenge.key_name
   ami           = local.ubuntu_ami
   subnet_id     = aws_subnet.terraform-challenge-http-az-a.id
-  user_data = file("./scripts/provision.sh")
+  user_data = "./scripts/provision.sh"
 
   vpc_security_group_ids = [
     aws_security_group.webserver.id,

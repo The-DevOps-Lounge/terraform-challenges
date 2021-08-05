@@ -5,6 +5,11 @@ resource "aws_eip" "webserver_a_01" {
 }
 
 resource "aws_eip" "webserver_b_01" {
-  instance = aws_instance.webserver_b_01.id
+  instance = aws_instance.webserver_b_01.iid
   vpc      = true
+}
+
+resource "aws_eip" "webserver_b_02" {
+  instance = aws_instance.webserver_b_01.id
+  vpc      = false
 }
