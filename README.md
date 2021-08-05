@@ -42,7 +42,7 @@ So as a student the recommended process for you looks a bit like this:
 1. Run `terraform destroy` (this step will never fail due to potential financial implications)
 1. Switch to the `level-1` branch and repeat the above steps, fixing the issues you face
 
-At each level above the previous, the problems get harder and harder.
+At each level above the previous, the problems get harder and harder or just more annoying. It depends how I'm feeling ;-)
 
 ### The Solution
 
@@ -54,3 +54,6 @@ This branch is the main branch all problems are stemmed from. This code is taken
 
 If you're struggling to understand the above instructions, have found an issue with the repository or just want general assistance, please join [The DevOps Lounge community](https://discord.gg/MTzBvSS) and seek assistance in the `#help` channel.
 
+## Cheating
+
+Yes, you can cheat. If you know even the basics of Git commits, you can easily work out a way of seeing what changes have taken place in past commits and cheat. It's up to you to determine if this is something that helps you learn or not. We all learn in different ways.
