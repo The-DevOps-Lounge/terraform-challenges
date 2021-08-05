@@ -4,7 +4,6 @@ resource "aws_alb" "terraform-challenge" {
 
   subnets = [
     aws_subnet.terraform-challenge-http-az-a.id,
-    aws_subnet.terraform-challenge-http-az-b.id,
   ]
 
   security_groups = [
@@ -42,7 +41,7 @@ resource "aws_lb_listener_rule" "webservers" {
 
   condition {
     path_pattern {
-      values = ["*"]
+      values = ["/hello"]
     }
   }
 }

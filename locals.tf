@@ -1,6 +1,6 @@
 
 locals {
-  ubuntu_ami = "ami-0a43280cfb87ffdba"
+  ubuntu_ami = "ami-0a43280cfb87ffdb"
 
   common_tags = {
     "Solution"    = "Terraform Challenge Solution"
