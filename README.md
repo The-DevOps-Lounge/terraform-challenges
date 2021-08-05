@@ -4,6 +4,22 @@ Terraform challenges for beginners and advanced students and users.
 
 The idea is simple: provide students with a single Terraform code base that has breaking changes introduced into it, then allow them to fix them.
 
+## Warning
+
+**!! WARNING !!**
+
+If you execute the following code against your AWS account you may **incur a bill** and **financial obligations** to AWS. Make sure you're prepared to cover the costs of running infrastructure inside of AWS before executing this Terraform code against your account.
+
+Not "The DevOps Lounge" nor "OpsFactory Pty Ltd" will be responsible for any financial hardship you incur after using this code.
+
+## Prerequisites
+
+You're going to need the following to use these challenges:
+
+1. An AWS account
+1. An IAM User with access and secret keys for accessing the AWS API
+1. Terraform installed locally and working
+
 ## Branches
 
 We introduce the breaking changes using branches that stem from the primary branch called `solution`. The branches that contain problems are called levels and follow the format `level-N` where `N` is the level, such as `1`, `2`, `7` or `12`, etc.
