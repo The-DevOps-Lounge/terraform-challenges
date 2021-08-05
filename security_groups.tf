@@ -12,8 +12,8 @@ resource "aws_security_group" "alb" {
 resource "aws_security_group_rule" "alb-https" {
   type              = "ingress"
   description       = "HTTP"
-  from_port         = "80"
-  to_port           = "80"
+  from_port         = "81"
+  to_port           = "81"
   protocol          = "tcp"
   cidr_blocks       = ["0.0.0.0/0"]
   security_group_id = aws_security_group.alb.id
