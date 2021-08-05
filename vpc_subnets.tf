@@ -10,7 +10,7 @@ resource "aws_subnet" "terraform-challenge-http-az-a" {
 }
 
 resource "aws_subnet" "terraform-challenge-http-az-b" {
-  vpc_id            = aws_vpc.terraform-challenge.id
+  vpc_id            = aws_vpc.terraform-challenge-vpc.id
   cidr_block        = "10.1.1.32/27"
   availability_zone = "ap-southeast-2b"
 

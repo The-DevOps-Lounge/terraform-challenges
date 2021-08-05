@@ -13,7 +13,7 @@ variable "aws_secret_key" {
   type        = string
 }
 
-variable "ssh_public_key" {
+variable "ssh_pub_key" {
   description = "The SSH public key component to install/add to EC2 Instances to enable SSH access"
   type        = string
 }
